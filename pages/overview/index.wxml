@@ -1,0 +1,5 @@
+<view class="test-container">
+  <view class="test-row">
+    这是首页，请开始开发
+  </view>
+</view>

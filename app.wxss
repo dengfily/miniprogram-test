@@ -1,0 +1,250 @@
+/**app.wxss**/
+
+page {
+  height: 100%;
+  background-color: #ffffff;
+  font-family: PingFangSC;
+}
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: table;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}
+.container {
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}
+
+.item-title {
+  color: #999;
+  font-size: 28rpx;
+  text-indent: 30rpx;
+  margin: 20rpx 0;
+}
+
+.list {
+  border-top: 2rpx #e5e5e5 solid;
+  border-bottom: 2rpx #e5e5e5 solid;
+  padding-left: 30rpx;
+  background: #fff;
+}
+
+.list .item {
+  border-bottom: 1rpx #e5e5e5 solid;
+  padding: 20rpx 0;
+  line-height: 48rpx;
+  display: flex;
+  font-size: 32rpx;
+}
+
+.list .item:last-child {
+  border: none;
+}
+
+.list .label {
+  width: 200rpx;
+}
+
+.list .item picker{
+  flex: 1;
+}
+
+.list .content {
+  flex: 1;
+  padding: 0 40rpx 0 20rpx;
+  text-align: left;
+  color: #666;
+  position: relative;
+}
+
+.list .content .date {
+  margin: 0 26rpx;
+}
+
+.list .content .arrow {
+ width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  margin-top: -15rpx;
+}
+
+.list.info .item {
+  border: none;
+}
+
+.list.info .label {
+  color: #999;
+}
+
+.info-list {
+  background: #fff;
+}
+
+.info-list .item {
+  position: relative;
+  border-bottom: 1rpx #e5e5e5 solid;
+}
+
+.info-list .item .title {
+  color: #222;
+  font-size: 34rpx;
+  font-weight: bold;
+  padding: 20rpx 30rpx 10rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-list .item .title .r {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.info-list .extr {
+  padding: 0rpx 0rpx 20rpx 60rpx;
+  font-size: 24rpx;
+  margin-right: 150rpx;
+}
+
+.info-list .ei {
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.info-list .label {
+  width: 150rpx;
+  color: #666;
+}
+
+.info-list .value {
+  color: #999;
+}
+
+.info-list .btn {
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  right: 60rpx;
+  top: 50%;
+  margin-top: -20rpx;
+  font-size: 32rpx;
+}
+
+.btn-wrap {
+  padding: 0rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.btn-wrap .btn {
+  margin-bottom: 20rpx;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+.btn.primary {
+  background: #ff7e31;
+  border-color: #ff7e31;
+  color: #fff;
+}
+
+.btn.primary.disabled, button[disabled]:not([type]) {
+  background: #ffb68a;
+  border-color: #ffb68a;
+  color: #efead8;
+}
+
+.fixed-btn-wrap::after {
+  content: '';
+  display: block;
+  opacity: 0;
+  height: 94rpx;
+}
+
+.fixed-btn-wrap .btn {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-radius: 0;
+  z-index: 999;
+}
+
+.fixed-btn-wrap .btn.btn1 {
+  flex: 1;
+  width: 33%;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #ff7e31;
+}
+
+.fixed-btn-wrap .btn.btn2 {
+  flex: 2;
+  width: 67%;
+  right: 0;
+}
+
+.placeholder{
+  color: #bbb !important;
+}
+
+textarea{
+  width: auto;
+  height: 100rpx;
+}
+
+.h-p {
+  height: 40rpx;
+}
+
+.b {
+  border: 1px red solid;
+}
+
+.no-data {
+  margin-top: 80rpx;
+  color: #ccc;
+  font-size: 28rpx;
+  text-align: center;
+}
+/* test style */
+.test-container{
+  padding: 20rpx;
+}
+.test-container .test-row{
+  margin-bottom: 10rpx;
+}
+.test-container .test-label{
+  font-size: 14px;
+}
