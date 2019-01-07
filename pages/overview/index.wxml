@@ -1,5 +1,22 @@
-<view class="test-container">
-  <view class="test-row">
-    这是首页，请开始开发
+<view class="normal-wrap">
+  <view class='box-shadow-wrap boxshadow'></view>
+  <view class='head-wrap'>
+    <view class='menu-wrap'>
+      <view class='menu-selected-wrap'>
+        <text class='menu-selected' bindtap='handleDrop'>{{menuSelect}}</text>
+        <image src='{{imgUrl}}' bindtap='handleDrop'></image>
+      </view>
+      <view class='menu-dropdown-wrap' wx:if='{{isopen}}'>
+        <view wx:for='{{menuContent}}' wx:for-item='menuItem' wx:key='{{role}}' class="menu-item {{menuSelect === menuItem.role ? 'active' : ''}}" bindtap='handleSelect' data-role='{{menuItem.role}}'>
+        {{menuItem.role}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='features-wrap'>
+    <view class='features-item' wx:for="{{itemList}}" wx:key="{{id}}" wx:for-item="item" bindtap='linkto' data-path='{{item.linkPath}}'>
+      <image src='{{item.iconPath}}'></image>
+      <view class='title'>{{item.title}}</view>
+    </view>
   </view>
 </view>

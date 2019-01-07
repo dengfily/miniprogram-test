@@ -1,0 +1,16 @@
+.content-item{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 40rpx;
+  border-bottom: 1px solid #EEEEEE;
+}
+.content-item text{
+  font-size: 15px;
+  color: #000000;
+  line-height: 100rpx;
+}
+.content-item image{
+  width: 20px;
+  height: 20px;
+}

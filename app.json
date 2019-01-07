@@ -1,6 +1,14 @@
 {
   "pages": [
-    "pages/overview/index"
+    "pages/overview/index",
+    "pages/attendance/index",
+    "pages/productinfo/index",
+    "pages/position/index",
+    "pages/heartrate/index",
+    "pages/column/index",
+    "pages/userCenter/index",
+    "pages/f2test/index",
+    "pages/healthreport/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

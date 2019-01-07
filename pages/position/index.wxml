@@ -1,0 +1,31 @@
+<view class='position-wrap'>
+  <view class='title-wrap boxshadow'>
+    {{person}}
+  </view>
+  <view class='type-wrap'>
+    <view class="type-item {{nowActive === '校内' ? 'active' : ''}}" bindtap='changeTab' data-type='校内'>
+      <text>校内</text>
+    </view>
+    <view class="type-item {{nowActive === '校外' ? 'active' : ''}}" bindtap='changeTab' data-type='校外'>
+      <text>校外</text>
+    </view>
+  </view>
+  <view class='map-wrap'>
+    <map
+      id="positionMap"
+      longitude="{{info.longitude}}"
+      latitude="{{info.latitude}}"
+      scale="{{info.scale}}"
+      enable-zoom="{{info.enableZoom}}"
+      enable-rotate="{{info.enableRotate}}"
+      polyline="{{polyline}}"
+      bindregionchange="regionchange"
+      show-location
+      style="width: 100%; height: 100%;"
+    >
+      <cover-view class="controls">
+        <cover-image class="refresh-btn" src="/assets/icon/refresh.png" bindtap='controltap' />
+      </cover-view>
+    </map>
+  </view>
+</view>

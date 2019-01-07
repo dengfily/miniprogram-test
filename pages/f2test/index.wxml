@@ -1,0 +1,6 @@
+<view class='title'>wx-F2 bar</view>
+<view class="container">
+  <ff-canvas id="column-dom" canvas-id="column-bar" opts="{{ opts }}"></ff-canvas>
+  <view class='title'>wx-F2 line</view>
+  <ff-canvas id="column-dom-line" canvas-id="column-line" opts="{{ optsline }}"></ff-canvas>
+</view>

@@ -1,0 +1,46 @@
+.position-wrap{
+  height: 100%;
+}
+.title-wrap{
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+}
+.type-wrap{
+  display: flex;
+  align-items: center;
+  height: 136rpx;
+  background-color: rgb(246, 246, 246);
+}
+.type-wrap .type-item{
+  width: 50%;
+  font-size: 15px;
+  color: #666666;
+  text-align: center;
+}
+.type-wrap .type-item.active text{
+  display: inline-block;
+  width: 134rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  background:#ffffff;
+  box-shadow:0px 3px 10px 0px rgba(85,123,255,0.2);
+  border-radius:13px;
+}
+.map-wrap{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 224rpx);
+}
+.controls{
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+}
+.map-wrap .refresh-btn{
+  width: 100rpx;
+  height: 100rpx;
+}

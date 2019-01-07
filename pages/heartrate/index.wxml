@@ -1,0 +1,33 @@
+<view class='heartrate-wrap'>
+  <view class='head-wrap'>
+    <text>一年级A班级</text>
+  </view>
+  <view class='content-wrap'>
+    <view class='number-info'>
+      <view class='number-item' wx:for='{{numberList}}' wx:for-item='item' wx:for-index='index' wx:key='{{index}}'>
+        <view class='item-image'>
+          <image class='image{{index}}' src="{{item.imgPath}}"></image>
+        </view>
+        <view class='item-number'><text>{{item.number}}</text></view>
+        <view><text class='item-title'>{{item.title}}</text></view>
+      </view>
+    </view>
+    <view class='heart-bad'>
+      <image class='bad-image' src="{{heartBad.imgPath}}"></image>
+      <text class='bad-number-wrap'>
+        <text class='bad-number'>{{heartBad.count}}</text>
+        <text class='bad-text'>人</text>
+      </text>
+    </view>
+    <view class='chart-wrap'>
+      <ff-canvas id="myChart" canvas-id="column" opts="{{ opts }}"></ff-canvas>
+      <view class='custom-tooltip' id='custom-tooltip'></view>
+    </view>
+    <view class='btn-wrap'>
+      <view class='btn-circle'>
+        <view>00:00</view>
+        <text>结束</text>
+      </view>
+    </view>
+  </view>
+</view>

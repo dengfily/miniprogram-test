@@ -1,0 +1,8 @@
+<view class='attend-wrap'>
+  <view>电动车品牌</view>
+  <view class='list-wrap'>
+    <view class='list-item' wx:for='{{bickList}}' wx:for-item='item' wx:key='{{type}}'>
+      <text>{{item.label}}</text> 
+    </view>
+  </view>
+</view>

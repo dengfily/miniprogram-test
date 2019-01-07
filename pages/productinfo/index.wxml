@@ -1,0 +1,21 @@
+<view class='product-wrap'>
+  <view class='head-wrap' style="background-image: url('/assets/image/about-back.png')">
+    <image src='{{headImage}}'></image>
+  </view>
+  <view class='product-content'>
+    <view class='list-wrap'>
+      <view class='item-wrap' wx:for='{{productList}}' wx:key='{{id}}' wx:for-item='item'>
+        <image class='title-image' src='{{item.titleImage}}'></image>
+        <view class='item-content'>
+          <view class='item-left'>
+            <image class='product{{item.id}}' src='{{item.imagePath}}'></image>
+          </view>
+          <view class='item-right'>
+            <p class='item-text'>{{item.introduce}}</p>
+          </view>
+        </view>
+        <p class='check-more' wx:if="{{item.deviceName === 'IN3000' || item.deviceName === 'IN3500'}}">了解更多</p>
+      </view>
+    </view>
+  </view>
+</view>

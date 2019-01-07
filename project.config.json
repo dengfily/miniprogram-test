@@ -1,5 +1,5 @@
 {
-	"description": "电动车登记系统",
+	"description": "智能锁练习系统",
 	"packOptions": {
 		"ignore": []
 	},
@@ -9,7 +9,8 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",

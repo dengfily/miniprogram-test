@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class='title'>echarts bar</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  <view class='title'>echarts line</view>
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecLine }}"></ec-canvas>
+</view>
+<!-- <view>echarts大部分属性都支持在小程序上使用</view> -->

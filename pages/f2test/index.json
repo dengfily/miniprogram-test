@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "wx-f2",
+  "usingComponents": {
+    "ff-canvas": "@antv/f2-canvas"
+  }
+}

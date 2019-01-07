@@ -1,0 +1,145 @@
+<view class='userCenter-wrap'>
+  <view class='user-img-wrap'>
+    <view class='user-img'>
+      <image src='{{info.imgPath}}'></image>
+    </view>
+    <view class='user-img-right'>
+      <view class='user-name'>{{info.username}}</view>
+      <view class='user-date'>{{info.datetime}}</view>
+    </view>
+  </view>
+  <view class='user-content-wrap'>
+    <view class='content-item user-info' wx:if='{{info.normal}}'>
+      <view class='content-title'>
+        <text>个人信息</text>
+        <text class='subText'>对比上一周期</text>
+      </view>
+      <view class='user-info-count'>
+        <view class='user-info-item'>
+          <image class='image-h' src='/assets/icon/health/bodyheight.png'></image>
+          <view class='user-info-number'>{{info.normal.height}}<text>cm</text></view>
+          <view class='user-info-title'>身高</view>
+          <image class='image-h-icon' src='/assets/icon/health/flat-tip.png'></image>
+        </view>
+        <view class='user-info-item'>
+          <image class='image-h' src='/assets/icon/health/bodyweight.png'></image>
+          <view class='user-info-number'>{{info.normal.weight}}<text>kg</text></view>
+          <view class='user-info-title'>体重</view>
+          <view class='image-h-icon weight'>
+            <image src='/assets/icon/health/up-tip.png'></image>
+            <text>{{info.normal.diffweight}}kg</text>
+          </view>
+        </view>
+        <view class='user-info-item'>
+          <image class='image-h' src='/assets/icon/health/exerciseintensity.png'></image>
+          <view class='user-info-number'>{{info.normal.strength}}</view>
+          <view class='user-info-title'>运动强度</view>
+          <view class='image-h-icon strength'>
+            <image src='/assets/icon/health/down-tip.png'></image>
+            <text>{{info.normal.diffstrength}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='content-item exercise-wrap' wx:if='{{info.exerciseNow}}'>
+      <view class='content-title'>
+        <text>班级运动量当前排名</text>
+      </view>
+      <view class='clearfix'>
+        <view class='exercise-now-left'>
+          <image src='/assets/icon/health/walk.png'></image>
+          <view class='exercise-step'>{{info.exerciseNow.nowStep}}</view>
+          <view class='exercise-ranking'>
+            <text>{{info.exerciseNow.nowRanking}}</text>
+          </view>
+          <text class='ranking-now-text'>当前排名</text>
+        </view>
+        <view class='exercise-now-right'>
+          <view class='step-item step1'>
+            <view class='step-item-image'>
+              <image src='/assets/icon/health/top1.png'></image>
+            </view>
+            <view class='step-item-number'>{{info.exerciseNow.nowStep1}}</view>
+            <view class='step-item-text'>{{info.exerciseNow.step1name}}</view>
+          </view>
+          <view class='step-item step2'>
+            <view class='step-item-image'>
+              <image src='/assets/icon/health/top2.png'></image>
+            </view>
+            <view class='step-item-number'>{{info.exerciseNow.nowStep2}}</view>
+            <view class='step-item-text'>{{info.exerciseNow.step2name}}</view>
+          </view>
+          <view class='step-item step3'>
+            <view class='step-item-image'>
+              <image src='/assets/icon/health/top3.png'></image>
+            </view>
+            <view class='step-item-number'>{{info.exerciseNow.nowStep3}}</view>
+            <view class='step-item-text'>{{info.exerciseNow.step3name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='content-item exercise-wrap' wx:if='{{info.exercise}}'>
+      <view class='content-title'>
+        <text>班级运动量本周排名</text>
+      </view>
+      <view class='clearfix'>
+        <view class='exercise-now-left'>
+          <image src='/assets/icon/health/walk.png'></image>
+          <view class='exercise-step'>{{info.exercise.nowStep}}</view>
+          <view class='exercise-ranking'>
+            <text>{{info.exercise.nowRanking}}</text>
+          </view>
+          <text class='ranking-now-text'>当前排名</text>
+        </view>
+        <view class='exercise-now-right'>
+          <view class='step-item step1'>
+            <view class='step-item-image'>
+              <image src='/assets/icon/health/top1.png'></image>
+            </view>
+            <view class='step-item-number'>{{info.exercise.nowStep1}}</view>
+            <view class='step-item-text'>{{info.exercise.step1name}}</view>
+          </view>
+          <view class='step-item step2'>
+            <view class='step-item-image'>
+              <image src='/assets/icon/health/top2.png'></image>
+            </view>
+            <view class='step-item-number'>{{info.exercise.nowStep2}}</view>
+            <view class='step-item-text'>{{info.exercise.step2name}}</view>
+          </view>
+          <view class='step-item step3'>
+            <view class='step-item-image'>
+              <image src='/assets/icon/health/top3.png'></image>
+            </view>
+            <view class='step-item-number'>{{info.exercise.nowStep3}}</view>
+            <view class='step-item-text'>{{info.exercise.step3name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='content-item advice-wrap' wx:if='{{info.advice}}'>
+      <view class='content-title'>
+        <text class='strength'>运动强度：{{info.advice.strength}}</text>
+      </view>
+      <view class='advice-line strength'></view>
+      <view class='content-title'>
+        <text>运动建议</text>
+      </view>
+      <view class='advice-box'>
+        <image src='/assets/icon/health/sports.png'></image>
+        <view class='advice-content'>{{info.advice.sports}}</view>
+      </view>
+      <view class='content-title'>
+        <text class='bodyType'>体型：{{info.advice.bodyType}}</text>
+      </view>
+      <view class='advice-line bodyType'></view>
+      <view class='content-title'>
+        <text>膳食建议</text>
+      </view>
+      <view class='advice-box meal'>
+        <image src='/assets/icon/health/weight.png'></image>
+        <view class='advice-content'>{{info.advice.meal}}</view>
+      </view>
+    </view>
+  </view>
+</view>

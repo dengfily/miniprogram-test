@@ -1,0 +1,121 @@
+<view class='userCenter-wrap'>
+  <view class='user-img-wrap'>
+    <view class='user-img'>
+      <image src='{{info.imgPath}}'></image>
+      <view class='user-name'>{{info.username}}</view>
+      <view class='user-date'>{{info.datetime}}</view>
+    </view>
+    <view class='user-img-right'>
+      <i class='box-cart'></i>
+      <view class='info-wrap'>
+        <view class='info-title'>基本健康数据</view>
+        <view class='info-content'>
+          <view class='clearfix'>
+            <text class='info-content-left'>身高(cm)</text>
+            <text class='info-content-right'>{{info.normal.height}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>体重(kg）</text>
+            <text class='info-content-right'>{{info.normal.weight}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>心率(次/分)</text>
+            <text class='info-content-right'>{{info.normal.heartrate}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>BMI</text>
+            <text class='info-content-right'>{{info.normal.bmi}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>睡眠</text>
+            <text class='info-content-right'>{{info.normal.sleep}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>跳绳(次/分)</text>
+            <text class='info-content-right'>{{info.normal.ropeskipping}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>仰卧起坐(次/分)</text>
+            <text class='info-content-right'>{{info.normal.situps}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>步数</text>
+            <text class='info-content-right'>{{info.normal.step}}</text>
+          </view>
+          <view class='clearfix'>
+            <text class='info-content-left'>卡路里(cal)</text>
+            <text class='info-content-right'>{{info.normal.calorie}}</text>
+          </view>
+          <view class='btn-wrap'>
+            <button bindtap='toHealthReport'>查看健康报告</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='function-list'>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/height.png' class='item-icon'></image>
+        <text>身高</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/weight.png' class='item-icon'></image>
+        <text>体重</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/heart-rate.png' class='item-icon'></image>
+        <text>心率</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/BMI.png' class='item-icon'></image>
+        <text>BMI</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/sleep.png' class='item-icon'></image>
+        <text>睡眠</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/rope-skipping.png' class='item-icon'></image>
+        <text>跳绳</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/situp.png' class='item-icon'></image>
+        <text>仰卧起坐</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/step.png' class='item-icon'></image>
+        <text>步数</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+    <view class='function-item'>
+      <view class='function-item-left'>
+        <image src='/assets/icon/userInfo/calorie.png' class='item-icon'></image>
+        <text>卡路里</text>
+      </view>
+      <image src='/assets/icon/arrow_right.png' class='arrow-right'></image>
+    </view>
+  </view>
+</view>

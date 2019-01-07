@@ -1,0 +1,133 @@
+.heartrate-wrap{
+  height: 100%;
+  background:linear-gradient(rgba(44,45,65,1) 0%,rgba(37,42,58,1) 100%);
+}
+.head-wrap{
+  /* height: 100rpx;
+  line-height: 100rpx; */
+  padding: 10rpx 0 30rpx;
+  text-align: center;
+  background-color: #ffffff;
+}
+.number-info{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.number-item{
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+.item-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+}
+.item-image .image0{
+  width: 62rpx;
+  height: 60rpx;
+}
+.item-image .image1{
+  width: 60rpx;
+  height: 60rpx;
+}
+.item-image .image2{
+  width: 62rpx;
+  height: 44rpx;
+}
+.item-number{
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10rpx;
+}
+.item-title{
+  font-size: 16px;
+  color: rgb(114, 116, 132);
+}
+.heart-bad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+.heart-bad .bad-image{
+  width: 92rpx;
+  height: 70rpx;
+}
+.heart-bad .bad-number{
+  font-size: 26px;
+  color: #ffffff;
+  margin-left: 20rpx;
+}
+.heart-bad .bad-text{
+  font-size: 16px;
+  color: rgb(114, 116, 132);
+  margin-left: 15rpx;
+}
+.chart-wrap{
+  width: 100%;
+}
+#myChart{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.custom-tooltip {
+  -moz-box-shadow: 1px 1px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 1px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 99;
+  background-color: #1890ff;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  width: 120px;
+  opacity: 0;
+}
+.custom-tooltip:after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #1890ff;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -8px;
+}
+.custom-tooltip span {
+  display: block;
+  color: #fff;
+}
+.custom-tooltip span:nth-child(1) {
+  font-size: 11px !important;
+}
+.custom-tooltip span:nth-child(2) {
+  font-size: 13px !important;
+}
+.btn-wrap{
+  text-align: center;
+  margin-top: 30rpx;
+}
+.btn-wrap .btn-circle{
+  display: inline-block;
+  padding: 30rpx;
+  color: #ffffff;
+  border-radius: 50%;
+  background: rgba(36,136,255,1);
+}
+.btn-wrap .btn-circle view{
+  font-size: 24px;
+  padding-top: 10rpx;
+}
+.btn-wrap .btn-circle text{
+  font-size: 14px;
+}

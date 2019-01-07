@@ -239,12 +239,10 @@ textarea{
   text-align: center;
 }
 /* test style */
-.test-container{
-  padding: 20rpx;
+.boxshadow{
+  box-shadow:0px 4px 4px 0px rgba(0,0,0,0.24),0px 0px 4px 0px rgba(0,0,0,0.12);
 }
-.test-container .test-row{
-  margin-bottom: 10rpx;
-}
-.test-container .test-label{
-  font-size: 14px;
+text, view{
+  padding: 0;
+  margin: 0;
 }

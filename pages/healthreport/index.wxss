@@ -1,0 +1,209 @@
+.userCenter-wrap{
+  padding: 40rpx 20rpx 20rpx;
+  background: linear-gradient(rgba(249,123,123,1) 0%,rgba(251,171,171,1) 100%);
+}
+.user-img-wrap{
+  overflow: hidden;
+  padding: 0 0 30rpx 20rpx;
+}
+.user-img-wrap .user-img{
+  float: left;
+}
+.user-img-wrap .user-img image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.user-img-wrap .user-img-right{
+  float: left;
+  margin-left: 24rpx;
+  color: #ffffff;
+}
+.user-img-wrap .user-img-right .user-name{
+  font-size: 20px;
+  line-height: 80rpx;
+}
+.user-img-wrap .user-img-right .user-date{
+  font-size: 16px;
+}
+.content-item{
+  padding: 26rpx;
+  box-shadow:0px 0px 8px 0px rgba(131,16,16,0.5);
+  border-radius:4px;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 20rpx;
+}
+.content-item.user-info{
+  padding: 20rpx 26rpx;
+}
+.content-item .content-title{
+  width: 100%;
+  overflow: hidden;
+  box-sizing:border-box;
+}
+.content-item .content-title text{
+  float: left;
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+}
+.content-item .content-title text.subText{
+  float: right;
+  font-size: 12px;
+  color: #A9BCD8;
+  margin-top: 26rpx;
+  font-weight: normal;
+}
+.content-item.exercise-wrap{
+  padding-left: 0;
+  padding-right: 0;
+}
+.content-item.exercise-wrap .content-title{
+  padding-left: 40rpx;
+  margin-bottom: 20rpx;
+}
+.user-info-count{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 31rpx;
+}
+.user-info-count .user-info-item{
+  float: left;
+  width: 33.333333%;
+}
+.user-info-count .user-info-item image.image-h{
+  width: 60rpx;
+  height: 60rpx;
+}
+.user-info-count .user-info-item image.image-h-icon{
+  width: 30rpx;
+  height: 22rpx;
+}
+.user-info-count .user-info-item .image-h-icon{
+  font-size: 12px;
+}
+.user-info-count .user-info-item .image-h-icon image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.user-info-count .user-info-item .image-h-icon.weight text{
+  color: #F15151;
+}
+.user-info-count .user-info-item .image-h-icon.strength text{
+  color: #81D232;
+}
+.user-info-count .user-info-number{
+  font-size: 24px;
+  color: #5A96E9;
+}
+.user-info-count .user-info-number text{
+  font-size: 14px;
+}
+.user-info-count .user-info-title{
+  font-size: 14px;
+  color: #333333;
+}
+.exercise-now-left{
+  float: left;
+  width: 208rpx;
+  border-right: 1px solid rgba(230,230,230,1);
+}
+.exercise-now-left image{
+  width: 30rpx;
+  height: 50rpx;
+}
+.exercise-now-left .exercise-step{
+  font-size: 24px;
+  line-height: 60rpx;
+  color: #5A96E9;
+}
+.exercise-now-left .ranking-now-text{
+  font-size: 14px;
+  line-height: 14px;
+}
+.exercise-ranking text{
+  display: inline-block;
+  width:76rpx;
+  height:40rpx;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 40rpx;
+  background:rgba(237,100,100,1);
+  border-radius:10px;
+}
+.exercise-now-right{
+  float: left;
+  width: calc(100% - 210rpx);
+}
+.step-item-image{
+  height: 128rpx;
+}
+.exercise-now-right .step-item{
+  float: left;
+  width: 33.333333%;
+  padding-top: 5rpx;
+}
+.step-item.step1 .step-item-image image{
+  width: 128rpx;
+  height: 128rpx;
+}
+.step-item.step2 .step-item-image, .step-item.step3 .step-item-image{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.step-item.step2 .step-item-image image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.step-item.step3 .step-item-image image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.step-item .step-item-number{
+  font-size: 12px;
+  color:#5A96E9;
+  line-height: 34rpx;
+  margin-top: 5rpx;
+}
+.step-item .step-item-text{
+  font-size: 14px;
+  color: #333333;
+  line-height: 40rpx;
+  margin-top: 12rpx;
+}
+.content-item .content-title text.strength{
+  color:#F19B9B;
+}
+.content-item .content-title text.bodyType{
+  color:#71ADFE;
+}
+.advice-wrap .advice-line{
+  width: 40px;
+  border-top:1px solid rgba(241,155,155,1);
+  margin: 14rpx 0;
+}
+.advice-wrap .advice-line.bodyType{
+  border-top-color: rgba(113,173,254,1)
+}
+.advice-wrap .advice-box{
+  display: flex;
+  margin: 20rpx 0;
+}
+.advice-wrap .advice-box image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top:3px;
+  margin-right: 30rpx;
+}
+.advice-wrap .advice-box.meal image{
+  width: 64rpx;
+  height: 60rpx;
+}
+.advice-wrap .advice-box .advice-content{
+  flex: 1;
+  font-size: 14px;
+  font-weight:400;
+  line-height:22px;
+  text-align: left;
+}
