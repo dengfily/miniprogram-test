@@ -1,0 +1,38 @@
+/**app.wxss**/
+.test-container{
+  padding: 0 20px;
+}
+.test-device-wrap .list-item{
+  padding: 10rpx;
+  border-bottom: 1px solid #ddd;
+}
+.test-device-wrap .list-item view{
+  font-size: 12px;
+}
+.test-search-wrap{
+  margin: 20px 0;
+}
+.lock-info-wrap{
+  margin-bottom: 5px;
+}
+.lock-info-wrap .info-content{
+  margin-bottom:20px;
+}
+.lock-info-wrap .info-content view{
+  font-size: 14px;
+  line-height:25px;
+}
+.test-row text{
+  font-size: 14px;
+  line-height: 20px;
+}
+.info-btn-wrap button{
+  margin-right: 20rpx;
+}
+.action_camera_result{
+  font-weight: normal;
+  font-size: 14px;
+}
+.key_wrap view{
+  font-size: 12px;
+}

@@ -1,3 +1,6 @@
+const CryptoJS = require('../tools/crypto/index.js').CryptoJS;
+
+// 格式化时间
 const formatTime = date => {
   if (!date) {
     return '';
@@ -73,8 +76,47 @@ function fetchBirthdayFromIdCard(value = '') {
   }
 }
 
+// 获取url地址上的某个参数值
+function getQueryString(url, name) {
+  const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+  const search = url.split('?')[1];
+  const r = search.match(reg);
+  if (r != null) return unescape(r[2]); return null;
+}
+
+// 获取手机端公钥
+function getPubkey() {
+  const dh = CryptoJS.DH.createDiffieHellman();
+  const pubkey = dh.generateKeys();
+  return pubkey;
+}
+
+// ArrayBuffer转16进度字符串
+function ab2hex(buffer) {
+  const hexArr = Array.prototype.map.call(
+    new Uint8Array(buffer),
+    function (bit) {
+      return ('00' + bit.toString(16)).slice(-2)
+    }
+  )
+  return hexArr.join('')
+}
+
+// 16进制字符串转ArrayBuffer
+function str2ab(hex) {
+  const typedArray = new Uint8Array(hex.match(/[\da-f]{2}/gi).map(function (h) {
+    return parseInt(h, 16)
+  }))
+  const buffer = typedArray.buffer;
+  return buffer;
+}
+
 module.exports = {
   formatTime: formatTime,
   checkBikesComplete: checkBikesComplete,
-  fetchBirthdayFromIdCard: fetchBirthdayFromIdCard
+  fetchBirthdayFromIdCard: fetchBirthdayFromIdCard,
+  getQueryString: getQueryString,
+  getPubkey: getPubkey,
+  ab2hex: ab2hex,
+  str2ab: str2ab,
 }

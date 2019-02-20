@@ -8,7 +8,12 @@
     "pages/column/index",
     "pages/userCenter/index",
     "pages/f2test/index",
-    "pages/healthreport/index"
+    "pages/healthreport/index",
+    "pages/punch/index",
+    "pages/bluetooth/index",
+    "pages/lowbluetooth/index",
+    "pages/lockList/index",
+    "pages/echartstest/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

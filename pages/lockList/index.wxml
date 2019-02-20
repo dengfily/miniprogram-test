@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='content-item' wx:for='{{itemList}}' wx:for-item='item' wx:key='{{item.id}}'>
+    <scroll-view
+      scroll-x
+      style="height:50px;width: auto;overflow:hidden"
+    >
+      <view class='scroll-view-item' bindtap='jumpto' data-lockinfo='{{item}}'>
+        <view class='flex-item'>
+          <text>{{item.name}}</text>
+          <image src='/assets/icon/arrow_right.png'></image>
+        </view>
+      </view>
+      <view class='scroll-btn' bindtap="dellock">
+        <text>删除</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

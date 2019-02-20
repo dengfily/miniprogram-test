@@ -22,49 +22,50 @@ Page({
     itemList: [
       {
         id: 1,
-        iconPath: '/assets/icon/overview/icon_attendance.png',
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
         title: '课程考勤',
-        linkPath: '/pages/attendance/index'
-      },
-      {
-        id: 2,
-        iconPath: '/assets/icon/overview/icon_fingerprint.png',
-        title: '进出校考勤',
+        // linkPath: '/pages/attendance/index',
         linkPath: ''
       },
       {
+        id: 2,
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
+        title: '进出校考勤',
+        linkPath: '/pages/lockList/index'
+      },
+      {
         id: 3,
-        iconPath: '/assets/icon/overview/icon_health.png',
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
         title: '学生健康',
         linkPath: '/pages/heartrate/index'
       },
       {
         id: 4,
-        iconPath: '/assets/icon/overview/icon_message.png',
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
         title: '课程调整',
         linkPath: ''
       },
       {
         id: 5,
-        iconPath: '/assets/icon/overview/icon_course.png',
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
         title: '课表相关',
         linkPath: ''
       },
       {
         id: 6,
-        iconPath: '/assets/icon/overview/icon_positioning.png',
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
         title: '人员定位',
         linkPath: '/pages/position/index'
       },
       {
         id: 7,
-        iconPath: '/assets/icon/overview/icon_physical.png',
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
         title: '图表分析',
         linkPath: '/pages/column/index'
       },
       {
         id: 8,
-        iconPath: '/assets/icon/overview/te.png',
+        iconPath: '/assets/icon/overview/icon_attendance_gray.png',
         title: '产品介绍',
         linkPath: '/pages/productinfo/index'
       },

@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='content-item' wx:for='{{itemList}}' wx:for-item='item' wx:key='{{item.id}}' bindtap='jumpto' data-path='{{item.linkPath}}'>
+    <text>{{item.name}}</text>
+    <image src='/assets/icon/arrow_right.png'></image>
+  </view>
+</view>

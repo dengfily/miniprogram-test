@@ -1,0 +1,71 @@
+<view class="test-container">
+  <view class='lock-info-wrap'>
+    <view class='info-content'>
+      <view>门锁名称：{{lockinfo.name}}</view>
+      <view>门锁编号：{{lockinfo.lockSn}}</view>
+      <view>设备序列号：{{lockinfo.lockDev}}</view>
+    </view>
+    <view class='info-btn-wrap'>
+      <button type="default" size="mini" bindtap="startbluetooth">{{isbluetooth ? "关闭蓝牙操作" : "蓝牙操作"}}</button>
+      <button type="default" size="mini" bindtap="openDoor" wx:if="{{deviceconnected}}">蓝牙开门</button>
+      <button type="default" size="mini" bindtap="clearDevice">清空蓝牙设备列表</button>
+      <button type="default" size="mini" bindtap='toCheckSetting'>扫描二维码</button>
+      <button type="default" size="mini" bindtap="sendData">加密</button>
+      <button type="default" size="mini" bindtap="handDecrypt">解密</button>
+      <button type="default" size="mini" bindtap="handleClick">获取用户key</button>
+      <button type="default" size="mini" class='pop_btn' plain="true" open-type='getPhoneNumber'  bindgetphonenumber="getUserPhone">获取用户手机号</button>
+    </view>
+  </view>
+  <view class='action_camera' wx:if="{{iscamera}}">
+    <camera
+      mode="scanCode"
+      device-position="back"
+      flash="off"
+      binderror="error"
+      bindscancode="scancode"
+      style="width: 100%; height: 300px;"
+    ></camera>
+  </view>
+  <view class='action_camera_result' wx:if="{{codeinfo.dev}}">
+    <view>设备序列号：{{codeinfo.dev}}</view>
+    <view>设备IMEI：{{codeinfo.imei}}</view>
+  </view>
+  <view class='action_bluetooth' wx:if="{{isbluetooth}}">
+    <view class="test-wrap test-row">
+      <text>蓝牙初始化：</text>
+      <text>{{isready ? 'ok' : '尚未初始化'}}</text>
+    </view>
+    <view class="test-row">
+      <text>蓝牙开关：</text>
+      <switch checked='{{isready}}' bindchange='switchBlueTooth' />
+    </view>
+    <view class="section test-search-wrap" hidden="{{!isready}}">
+      <button type="default" size="{{primarySize}}" loading="{{searchingstatus}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="searchbluetooth"> {{searchingstatus?"搜索中":"搜索蓝牙"}} </button>
+    </view>
+    <block class="test-row test-device-wrap" wx:if="{{deviceList.length}}">
+      <view class="section" hidden="{{!isready}}">
+        <view class="list-item {{deviceconnected?'deviceconnected':''}}" wx:for="{{deviceList}}" wx:for-item="item" wx:key="deviceId">
+          <view>设备id: {{item.deviceId}}</view>
+          <view>设备名称: {{item.name}}</view>
+          <button id="{{item.deviceId}}" type="default" size="mini" bindtap="connectTO">{{deviceconnected?"断开":"连接"}}</button>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='key_wrap'>
+    <view wx:if="{{isPub}}">
+      <view>明文数据： {{pubinfo.testdata}}</view>
+      <view>AES密钥： {{pubinfo.aesKey}}</view>
+      <view>AES向量： {{pubinfo.aes_iv}}</view>
+      <view>加密结果： {{pubinfo.result}}</view>
+    </view>
+    <view wx:if="{{isSecrity}}">
+      <view>密文数据： {{pubinfo.result}}</view>
+      <view>AES密钥： {{pubinfo.aesKey}}</view>
+      <view>AES向量： {{pubinfo.aes_iv}}</view>
+      <view>解密结果： {{secrityinfo.result}}</view>
+    </view>
+    <view class='info-btn-wrap'>
+    </view>
+  </view>
+</view>

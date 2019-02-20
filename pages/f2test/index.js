@@ -1,5 +1,5 @@
 // 全局注册F2
-import F2 from '@antv/wx-f2'; // 注：也可以不引入， initChart 方法已经将 F2 传入，如果需要引入，注意需要安装 @antv/wx-f2 依赖
+import F2 from '@antv/f2-canvas'; // 注：也可以不引入， initChart 方法已经将 F2 传入，如果需要引入，注意需要安装 @antv/wx-f2 依赖
 
 let chart = null;
 
